@@ -44,5 +44,11 @@ footer {
   text-align: center;
 }
 
+main img {
+  width: 100%;
+  max-width: 300px; 
+  display: block;  
+  margin: 0 auto; 
+}
 
   
