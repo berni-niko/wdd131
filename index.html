@@ -3,41 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Chris Mills" />
-<meta
-  name="description"
-  content="The MDN Web Docs Learning Area aims to provide
-complete beginners to the Web with all they need to know to get
-started with developing websites and applications." />
-    <link rel="stylesheet" type="text/css" href="layout.css">
-    <title>Nic Tomu WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Nic Tomu</title>
+    <meta name="description" content="A course in dynamic web fundamentals for WDD 131">
+    <meta name="author" content="Nic Tomu" >
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <script src="scripts/getdate.js" defer></script>
+
 </head>
 <body>
     <header>
-        <h1>Nic Tomu WDD 131</h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - Nic Tomu</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="https://www.linkedin.com/">Linkden</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=eng#:~:text=11%20And%20he,to%20their%20infirmities.">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="content">
-        <main>
-            <p>Main Content</p>
-            <img src="nztemple.png" alt="NZ Temple">
-        </main>
-
-        <aside>
-            <p>Aside Content</p>
-        </aside>
-    </div>
-
+    <main>
+        <section class="card">
+            <h2>About Me</h2> <!-- Section heading -->
+            <p>Hi, I'm Nic Tomu. I was born in New Zealand but grew up in Tonga until I was five. Now, I'm happily married with four amazing kids. Family is my world. I enjoy volleyball, but nothing beats spending time with my family, especially my wife. Whether it's a picnic, game night, or a quiet evening at home, those moments are precious. 
+                I'm also into software development, taking a course that's been an incredible journey. I've learned so much about coding and problem-solving, gaining confidence along the way. Each new concept is a step toward a future filled with opportunities.</p>
+                
+            <img src="images/Nic Photo.jpg" alt="Nic Tomu's photo" style="width: 100px; height: 100px;"> <!-- Personal photo -->
+    
+            <!-- New Zealand blurb with flag image -->
+            <h3>New Zealand</h3> <!-- Sub-heading for New Zealand -->
+            <p>New Zealand is a beautiful country located in the southwestern Pacific Ocean, known for its breathtaking landscapes and rich Maori culture. It offers a wide range of outdoor activities, from hiking to water sports.</p>
+            <img src="images/NZ Flag.png" alt="New Zealand Flag" style="width: 100px; height: 60px;"> <!-- Flag image -->
+        </section>
+    
+        <!-- Second section with the class 'card' -->
+        <section class="card">
+            <h2>Favourite links</h2>         
+            <ul>
+                <li><a href="https://reactjs.org/">React Documentation</a></li>
+                <li><a href="https://vuejs.org/">Vue.js Documentation</a></li>
+                <li><a href="https://angular.io/docs">Angular Documentation</a></li>
+            </ul>
+        </section>
+    </main>
+    
     <footer>
-        <p>Footer Content</p>
+        <p>
+            &copy; <span id="currentyear"></span> Nic Tomu. New Zealand.
+        </p>
+        <p id="lastModified">
+            Last modified on: <span></span>
+        </p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,82 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Apply Google Fonts */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent sizing */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Header styling */
+header {
+    background-color: #2e3b52; /* Dark header background */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding */
+}
+
+/* Navigation styling */
+nav {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Space menu items evenly */
+    background-color: #353b48; /* Navigation background color */
+}
+
+nav ul {
+    display: flex; /* Ensure the <ul> is using flexbox */
+    justify-content: space-around; /* Spread out the <li> elements evenly */
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0; /* Remove margin to ensure alignment */
+}
+
+nav li {
+    margin: 0 10px; /* Add margin between <li> elements for spacing */
+}
+
+nav a {
+    text-decoration: none; /* No underline */
+    color: white; /* White text */
+    padding: 10px; /* Padding for clickable area */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+nav a:hover {
+    color: #f1c40f; /* Hover color - gold */
+}
+
+/* Main content styling */
+main {
+    max-width: 800px; /* Limit width */
+    margin: 20px auto; /* Center horizontally with margin */
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the main content */
+    background-color: white; /* White background for the main content */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Section styling */
+.card {
+    padding: 15px; /* Padding inside the card */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Footer styling */
+footer {
+    background-color: #2e3b52; /* Same as header for consistency */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding */
+}
+
+footer p {
+    margin: 0; /* Remove margin from paragraphs */
+}
+
+footer #lastModified {
+    font-size: 0.8em; /* Smaller font size for last modified info */
+}
