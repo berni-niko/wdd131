@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to update date and time in footer
     function updateDateTimeFooter() {
         var footerDateTimeSpan = document.getElementById("footerDateTime");
-        footerDateTimeSpan.textContent = currentDate(); // Update date and time in footer
+        footerDateTimeSpan.textContent = 'Last Modifications ' + currentDate(); // Update date and time in footer
     }
 
     // Call the function to update the date and time when the page loads
