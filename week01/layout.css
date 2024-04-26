@@ -51,6 +51,13 @@ main {
   padding: 1rem;
 }
 
+main img {
+  width: 100%;
+  max-width: 300px; 
+  display: block;  
+  margin: 0 auto; 
+}
+
 aside {
   grid-area: aside;
   background: #e2e2e2;
