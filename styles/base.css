@@ -1,110 +1,110 @@
-/* General body styling */
 body {
-    font-family: 'Roboto', sans-serif; /* Apply Google Fonts */
+    font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure consistent sizing */
-    background-color: #f9f9f9; /* Light background color */
+    box-sizing: border-box; 
+    background-color: #f9f9f9; 
 }
 
-/* Header styling */
 header {
-    background-color: #2e3b52; /* Dark header background */
-    color: white; /* White text color */
-    text-align: center; /* Centered text */
-    padding: 20px; /* Padding */
+    background-color: #2e3b52; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
 }
 
-/* Navigation styling */
 nav {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Space menu items evenly */
-    background-color: #353b48; /* Navigation background color */
+    display: flex; 
+    justify-content: center; 
+    background-color: #353b48; 
 }
 
 nav ul {
-    display: flex; /* Ensure the <ul> is using flexbox */
-    justify-content: space-around; /* Spread out the <li> elements evenly */
-    list-style: none; /* Remove bullet points */
+    display: flex;
+    justify-content: space-around; 
+    list-style: none;
     padding: 0;
-    margin: 0; /* Remove margin to ensure alignment */
+    margin: 0;
 }
 
 nav li {
-    margin: 0 10px; /* Add margin between <li> elements for spacing */
+    margin: 0 10px;
 }
 
 nav a {
-    text-decoration: none; /* No underline */
-    color: white; /* White text */
-    padding: 10px; /* Padding for clickable area */
-    transition: color 0.3s; /* Smooth transition for hover */
+    text-decoration: none; 
+    color: white; 
+    padding: 10px; 
+    transition: color 0.3s; /
 }
 
 nav a:hover {
-    color: #f1c40f; /* Hover color - gold */
+    color: #f1c40f;
 }
 
-/* Main content styling */
+
 main {
-    max-width: 900px; /* Limit width */
-    margin: 20px auto; /* Center horizontally with margin */
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 20px; /* Space between grid items */
-    padding: 20px; /* Padding around the main content */
-    border-radius: 10px; /* Rounded corners */
+    max-width: 900px; 
+    margin: 20px auto; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    border-radius: 10px; 
 }
 
-/* Section styling */
 .card {
-    padding: 100px; /* Padding inside the card */
-    border: 2px solid #ccc; /* Light border */
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 20px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styling */
 footer {
-    background-color: #2e3b52; /* Same as header for consistency */
-    color: white; /* White text */
-    text-align: center; /* Centered text */
-    padding: 20px; /* Padding */
+    background-color: #2e3b52;
+    color: white; 
+    text-align: center; 
+    padding: 20px;
 }
 
 footer p {
-    margin: 0; /* Remove margin from paragraphs */
+    margin: 0;
 }
 
 footer #lastModified {
-    font-size: 0.8em; /* Smaller font size for last modified info */
+    font-size: 0.8em; 
 }
 
-/* Additional CSS for content-wrapper */
 .content-wrapper {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    align-items: center;
 }
 
-/* Additional CSS for paragraph inside content-wrapper */
 .content-wrapper p {
-    flex: 1; /* Take remaining space */
+    flex: 2;
 }
 
-/* Additional CSS for image inside content-wrapper */
 .content-wrapper img {
-    margin-left: 20px; /* Add margin between paragraph and image */
+    flex: 1; 
 }
 
-/* CSS for profile image */
 .profile-image {
     width: 100px;
     height: 100px;
-    border-radius: 50%; /* Make it circular */
+    border-radius: 50%;
 }
 
-/* CSS for flag image */
 .flag-image {
     width: 100px;
     height: 60px;
+}
+
+.card-container:nth-child(1) .card {
+    background-color: #f1f1f1;  
+}
+
+
+.card-container:nth-child(2) .card {
+   background-color: #eaeaea;
+   
 }
