@@ -1,15 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap');
-
-:root{
-    --primary-background: #084B83;
-    --primary-accent: #E7B6C2;
-
-    --secondary-background: #F2F5EA;
-    --secondary-accent: #B54660;
-    
-    --heading-font: 'Bree Serif', serif;
-    --paragraph-font: 'Raleway', sans-serif;
-}
 
 body {
     font-family: 'Roboto', sans-serif; 
