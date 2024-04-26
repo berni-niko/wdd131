@@ -47,21 +47,20 @@ nav a:hover {
 
 /* Main content styling */
 main {
-    max-width: 800px; /* Limit width */
+    max-width: 900px; /* Limit width */
     margin: 20px auto; /* Center horizontally with margin */
     display: grid; /* Use CSS Grid for layout */
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     gap: 20px; /* Space between grid items */
     padding: 20px; /* Padding around the main content */
-    background-color: white; /* White background for the main content */
     border-radius: 10px; /* Rounded corners */
 }
 
 /* Section styling */
 .card {
-    padding: 15px; /* Padding inside the card */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 10px; /* Rounded corners */
+    padding: 100px; /* Padding inside the card */
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 20px; /* Rounded corners */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
@@ -79,4 +78,33 @@ footer p {
 
 footer #lastModified {
     font-size: 0.8em; /* Smaller font size for last modified info */
+}
+
+/* Additional CSS for content-wrapper */
+.content-wrapper {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+}
+
+/* Additional CSS for paragraph inside content-wrapper */
+.content-wrapper p {
+    flex: 1; /* Take remaining space */
+}
+
+/* Additional CSS for image inside content-wrapper */
+.content-wrapper img {
+    margin-left: 20px; /* Add margin between paragraph and image */
+}
+
+/* CSS for profile image */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make it circular */
+}
+
+/* CSS for flag image */
+.flag-image {
+    width: 100px;
+    height: 60px;
 }
