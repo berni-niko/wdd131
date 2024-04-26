@@ -109,3 +109,15 @@ footer #lastModified {
    background-color: #eaeaea;
    
 }
+
+.kiwi-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
