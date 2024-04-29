@@ -22,3 +22,7 @@ section {
     background-color: #fff;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
