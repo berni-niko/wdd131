@@ -1,143 +1,87 @@
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Using Google Font Roboto */
+    font-family: 'Open Sans', sans-serif; /* Example font from Google Fonts */
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Header styles */
-
 header {
-    background-color: #4a5135; /* Dark earthy green */
-    color: #f0e4d7; /* Off-white for contrast */
-    padding: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Ensure this is positioned to apply z-index */
-    z-index: 10; /* Higher z-index so it stays on top */
-    width: 100%; /* Ensure the header is full width */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center the navigation items */
-    flex-grow: 1; /* Let the nav grow to use available space */
-}
-
-nav li {
-    padding: 0 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #f0e4d7; /* Off-white for contrast */
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #fff; /* White on hover */
-}
-
-/* Hamburger menu styles */
 .hamburger {
-    display: none; /* Hidden by default */
+    display: block;
+    font-size: 24px;
     cursor: pointer;
 }
 
-/* Main content styles */
-main {
-    padding-top: 80px; /* Adjust padding to ensure main content does not overlap with the header */
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+nav ul {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
 }
 
-main h2 {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-align: center;
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
 figure {
-    margin-bottom: 20px; /* Add some space between figures */
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
 }
 
 figure img {
-    max-width: 50%; /* Make sure images don't exceed their container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 5px;
 }
 
 footer {
-    position: fixed; /* Keeps the footer in a fixed position */
-    bottom: 0; /* Aligns the footer to the bottom of the screen */
-    width: 100%; /* Ensures the footer spans the entire width */
-    background-color: #4a5135; /* Dark earthy green */
-    color: white;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
 }
 
-
-footer .footer-text {
-    color: #f0e4d7; /* Off-white for contrast */
-    font-size: 14px;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer #lastModified {
-    font-size: 0.8em; 
-}
-
-.kiwi-icon {
-    width: 20px;
-    height: 20px;
+.footer-text, .kiwi-icon {
     vertical-align: middle;
 }
 
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
-    nav ul {
-        display: none; /* Hide nav items by default in mobile view */
-    }
-
-    .hamburger {
-        display: block; /* Hidden by default */
-        cursor: pointer;
-        font-size: 30px;
-        color: #f0e4d7;
-    }
-
-    main {
-        padding-top: 140px; /* Add space for the fixed header */
-    }
-
-    nav ul.open {
-        display: flex; /* Show nav items when hamburger menu is clicked */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust based on header height */
-        left: 0;
-        background-color: #4a5135;
-        width: 100%;
-        padding: 20px;
-    }
-
-    nav ul.open li {
-        margin-bottom: 10px;
-    }
+.kiwi-icon {
+    width: 24px;
+    margin: 0 5px;
 }
 
+/* Fonts from Google API */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
