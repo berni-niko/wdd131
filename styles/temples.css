@@ -9,7 +9,7 @@ body {
 header {
     background-color: #4a5135; /* Dark earthy green */
     color: #f0e4d7; /* Off-white for contrast */
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,10 +28,12 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center; /* Center the navigation items */
+    flex-grow: 1; /* Let the nav grow to use available space */
 }
 
 nav li {
-    margin-right: 20px;
+    padding: 0 10px;
 }
 
 nav a {
@@ -117,12 +119,6 @@ footer #lastModified {
         cursor: pointer;
         font-size: 30px;
         color: #f0e4d7;
-    }
-
-    header {
-        position: fixed; /* Make header fixed on small screens */
-        top: 0;
-        left: 0;
     }
 
     main {
