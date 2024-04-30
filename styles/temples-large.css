@@ -1,6 +1,9 @@
 @media (min-width: 768px) {
     header {
+        display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
     }
 
     .hamburger {
@@ -9,10 +12,13 @@
 
     nav ul {
         display: flex;
-        flex-direction: row;
     }
 
     main {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure img {
+        max-width: 450px; /* Example: larger images for very large screens */
     }
 }
