@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Using Google Font Roboto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+
+header {
+    background-color: #4a5135; /* Dark earthy green */
+    color: #f0e4d7; /* Off-white for contrast */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensure this is positioned to apply z-index */
+    z-index: 10; /* Higher z-index so it stays on top */
+    width: 100%; /* Ensure the header is full width */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0e4d7; /* Off-white for contrast */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff; /* White on hover */
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+}
+
+/* Main content styles */
+main {
+    padding-top: 80px; /* Adjust padding to ensure main content does not overlap with the header */
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+main h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+figure {
+    margin-bottom: 20px; /* Add some space between figures */
+}
+
+figure img {
+    max-width: 50%; /* Make sure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+    position: fixed; /* Keeps the footer in a fixed position */
+    bottom: 0; /* Aligns the footer to the bottom of the screen */
+    width: 100%; /* Ensures the footer spans the entire width */
+    background-color: #4a5135; /* Dark earthy green */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+footer .footer-text {
+    color: #f0e4d7; /* Off-white for contrast */
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer #lastModified {
+    font-size: 0.8em; 
+}
+
+.kiwi-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide nav items by default in mobile view */
+    }
+
+    .hamburger {
+        display: block; /* Hidden by default */
+        cursor: pointer;
+        font-size: 30px;
+        color: #f0e4d7;
+    }
+
+    header {
+        position: fixed; /* Make header fixed on small screens */
+        top: 0;
+        left: 0;
+    }
+
+    main {
+        padding-top: 140px; /* Add space for the fixed header */
+    }
+
+    nav ul.open {
+        display: flex; /* Show nav items when hamburger menu is clicked */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        background-color: #4a5135;
+        width: 100%;
+        padding: 20px;
+    }
+
+    nav ul.open li {
+        margin-bottom: 10px;
+    }
+}
+
