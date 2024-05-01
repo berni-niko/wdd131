@@ -28,8 +28,6 @@ header {
     width: 100%; /* Ensures the div takes full width */
 }
 
-
-
 .hamburger {
     position: absolute;
     top: 10px;
