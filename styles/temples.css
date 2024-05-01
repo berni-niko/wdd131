@@ -101,21 +101,17 @@ footer {
     vertical-align: middle;
 }
 
-/* Base styles for figure images */
-figure img {
-    width: 100%;
-    height: auto;
-}
 
-/* Media Queries */
-@media (min-width: 768px) {
-    figure img {
-        max-width: 350px; /* Adjusting for tablets */
+
+
+@media (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
     }
 }
 
-@media (min-width: 1024px) {
-    figure img {
-        max-width: 400px; /* Adjusting for smaller desktops */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* One column for smaller screens */
     }
 }
