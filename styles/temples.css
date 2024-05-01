@@ -20,6 +20,16 @@ header {
     position: relative;
 }
 
+.header {
+    text-align: center;
+    margin: 20px 0;  /* Adds vertical spacing above and below the header */
+    padding: 10px 0; /* Optional: Adds padding inside the header div */
+    background-color: #f8f8f8; /* Optional: Adds a background color to the header div */
+    width: 100%; /* Ensures the div takes full width */
+}
+
+
+
 .hamburger {
     position: absolute;
     top: 10px;
@@ -46,10 +56,18 @@ nav ul li a:hover {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
     gap: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px;
+    width: 100%;
 }
 
 figure {
@@ -59,12 +77,6 @@ figure {
     text-align: center;
 }
 
-figure img {
-    width: 100%; /* Make the image width responsive to its container */
-    height: auto; /* Maintain the aspect ratio */
-    max-width: 400px; /* Maximum width allowed for the image */
-    margin: auto; /* Center the image in the figure if it's smaller than the max width */
-}
 
 .responsive-img {
     max-width: 100%;
